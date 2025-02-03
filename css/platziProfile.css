@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 5px;
+    text-align: left;
+    
+}
+
+
+header {
+    text-align: center;
+    font-size: 17px;
+    margin: 25px;
+    input {
+        color: aliceblue;
+        font-family:sans-serif;
+        font-weight: 200;
+    }    
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f1f1f1;
+    padding: 30px;
+    margin: 5px;
+    font-size: 20px;
+    font-family:sans-serif;   
+}
+
+
+
+body {
+    background: linear-gradient(to top right, black 0%, black 50%, green 160%);
+    color: aliceblue;
+    font-family:sans-serif;
+    text-align: center;
+} 
+
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.left-column{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    padding: auto;
+    line-height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 5px solid #f1f1f1;
+    font-size: 18px;
+
+  a{
+    color: white;
+    text-decoration: underline;
+    margin: 10px;
+  }
+}
+
+.left-column img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    line-height: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.associate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    border: 5px solid #f1f1f1;
+}
+
+.associate img {
+    width: 100%;
+    height: auto;
+}
+
+.misCarreras{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    border: 5px solid #f1f1f1;
+}
+
+.misCarreras img {
+    width: 45%;
+    height: auto;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        padding: 20px;
+        width: 100%;
+    }
+
+    .left-column, .center-column, .right-column {
+        width: 100%; /* Ajusta el ancho de las columnas al 100% */
+        margin: 10px auto; /* Centra las columnas horizontalmente */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+        border-width: 2px;
+    }
+
+    .left-column, .center-column, .right-column {
+        width: 100%; /* Ajusta el ancho de las columnas al 100% */
+        margin: 5px auto; /* Centra las columnas horizontalmente */
+    }
+}

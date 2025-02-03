@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to top right, black 0%, black 50%, green 160%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 20px;
+}
+
+header img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 25%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    text-align: center;
+    align-items: center;
+}
+
+.container{
+    .logo_platzi{
+        width: 100%;
+        height: 225px;
+        margin: 10px auto;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .logo_platzi img{
+        width: auto;
+        height: 60%;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+
+        input {
+            width: 750px;
+            margin: 0 auto;
+            height: 50px;
+            padding: 15px;
+            font-size: 20px;
+            border: 10px 0 0 5px;
+            border-radius: 125px;
+            background: linear-gradient(to top right, black 0%, black 50%, green 160%);
+            background-image: url('https://static-00.iconduck.com/assets.00/search-icon-256x256-v6gfhlc1.png');
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: 25px;
+        } 
+
+        .main-input-container{
+            box-shadow: 0px 6px 0 #20212447;
+        }
+
+    }
+}
+
+.carrerasPlatzi{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: auto;
+}
+
+    .Liderazgo, 
+    .Inglés, 
+    .Marketing, 
+    .Negocios, 
+    .Programación, 
+    .Startups, 
+    .Contenido_digital, 
+    .Diseño{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 10px;    
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #1a1a1a;
+        border: 3px solid white;
+        font-size: 8px;
+    }
+
+
+footer{
+    display: grid;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    margin: 20px;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+/* Media query para pantallas medianas */
+@media (max-width: 480px) {
+    .container .input input {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .carrerasPlatzi {
+        flex-direction: column;
+    }
+
+    .carrerasPlatzi .Liderazgo,
+    .carrerasPlatzi .Inglés,
+    .carrerasPlatzi .Marketing,
+    .carrerasPlatzi .Negocios,
+    .carrerasPlatzi .Programación,
+    .carrerasPlatzi .Startups,
+    .carrerasPlatzi .Contenido_digital,
+    .carrerasPlatzi .Diseño {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    footer {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+}
