@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 25px;
+    padding: 25px;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to top right, black 0%, black 50%, green 160%);
+    color: white;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: green;
+    color: white;
+    cursor: pointer;
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 50vh;
+    margin: 50px;
+    padding: 10px;
+
+    background: url('https://pbs.twimg.com/media/DccYx_3U0AAdz9x?format=jpg&name=small');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.hoodies{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+}
+
+.accesorios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+}
+
+.camisetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto);
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.hoodie_1,
+.hoodie_2,
+.accesorio_1,
+.accesorio_2,
+.accesorio_3,
+.accesorio_4,
+.accesorio_5,
+.accesorio_6,
+.camiseta_1,
+.camiseta_2,
+.camiseta_3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 5px solid rgb(13, 49, 13);
+    border-radius: 10px;
+}
+
+.hoodie_1 img,
+.hoodie_2 img,
+.accesorio_1 img,
+.accesorio_2 img,
+.accesorio_3 img,
+.accesorio_4 img,
+.accesorio_5 img,
+.accesorio_6 img,
+.accesorio_7 img,
+.camiseta_1 img,
+.camiseta_2 img,
+.camiseta_3 img{
+    width: 150px;
+    height: auto;
+}
+
+
+
+
+.portadaCamisetas{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 100vh;
+    margin: 50px;
+    padding: 10px;
+    
+    background: url('https://statics-maker.llt-services.com/gra/images/2022/11/28/xlarge/0ae63f40-fb46-44f9-ac5e-6a4518930277.jpg');
+
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+header img {
+    width: 80%;
+    height: auto;
+}
+
+.product img {
+    width: 80%;
+    height: auto;
+}
+
+.product {
+    margin-bottom: 15px;
+}
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product {
+    margin-bottom: 10px;
+}
+}
+
+/* Media queries para pantallas grandes */
+@media (min-width: 1025px) {
+header img {
+    width: 600px;
+    height: 300px;
+}
+
+.product img {
+    width: 300px;
+    height: 300px;
+}
+}
